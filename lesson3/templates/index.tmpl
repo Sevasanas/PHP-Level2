@@ -1,0 +1,14 @@
+<html>
+  <head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" type="text/css" href="templates/css/style.css">
+  </head>
+  <body>
+    <h2>{{title}}</h2>
+     {% for photo in photos %}
+        <div class="small_photo"><A Href="photo.php?photo={{photo}}"><img src="{{path_to_photo_small}}/{{photo}}"></A></div>
+      {% endfor %}
+	  
+	  <?="welcome"?>
+  </body>
+</html>
