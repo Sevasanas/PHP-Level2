@@ -1,0 +1,17 @@
+.small_photo {
+    margin: 10px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+}
+
+.full_photo {
+    margin: 10px;
+}
+.full_photo img {
+    width: 100%;
+
+}

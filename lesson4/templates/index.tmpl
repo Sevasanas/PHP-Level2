@@ -1,0 +1,16 @@
+<html>
+  <head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" type="text/css" href="templates/css/style.css">
+  </head>
+  <body>
+    <h2>{{title}}</h2>
+     {% for photo in data %}
+        <div class="small_photo"><A Href="photo.php?photo={{photo}}"><img src="{{path_to_photo_small}}/{{photo}}"></A></div>
+      {% endfor %}
+
+      <div class="button"><a href="?limit={{count + 5}}" id="show_more">Показать еще</a><a href="index.php">Скрыть все</a></div>
+	  
+	  <?="welcome"?>
+  </body>
+</html>
