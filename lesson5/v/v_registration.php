@@ -1,23 +1,12 @@
-<h4>Registration</h4>
+<?php if($text):?>
+<h1>Вы успешно зарегестрировались!</h1>
+<?php
+endif;
+?>
+<br>
 <form method="post">
-  <label for="new_login">Login</label>
-  <input type="text" id="new_login" name="new_login">
-  <br>
-  <label for="new_pass">Password</label>
-  <input type="text" id="new_pass" name="new_pass">
-  <br>
-  <label for="new_name">Name</label>
-  <input type="text" id="new_name" name="new_name">
-  <br>
-  <label for="new_phone">Phone</label>
-  <input type="tel" id="new_phone" name="new_phone">
-  <br>
-  <label for="new_mail">Email</label>
-  <!--  <input type="email" id="new_mail" name="new_mail">-->
-  <input type="text" id="new_mail" name="new_mail">
-  <br>
-  <input type="submit" value="Submit" name="new_registration">
+	<input type="text" name="name" placeholder="Введите имя" required>
+	<input type="text" name="login" placeholder="Введите логин" required>
+	<input type="password" name="password" placeholder="Введите пароль" required>
+	<input type="submit" name="button" value="Зарегистрировать">
 </form>
-<?php if ($login) : ?>
-  <div> User <?= $login ?> already exists!</div>
-<?php endif; ?>

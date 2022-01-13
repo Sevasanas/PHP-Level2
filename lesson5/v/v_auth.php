@@ -1,19 +1,11 @@
-<h3>Login</h3>
-<form  method="post">
-  <label for="login">Login</label>
-  <input type="text" id="login" name="login">
-  <label for="password">Password</label>
-  <input type="password" id="password" name="password">
-  <br>
-  <br>
-  <input type="submit" value="Log in">
-</form>
-<?php if ($message == 'incorrect_login') : ?>
-  <div>Incorrect login and/or password!</div>
-<?php elseif ($message): ?>
-  <div><?= $message ?>, please login again!</div>
-<?php else: ?>
-  <div>Input your login and password</div>
-<?php endif; ?>
+<?php if($text):?>
+    <h1>Вы успешно зарегестрировались!</h1>
+<?php
+endif;
+?>
 <br>
-<a href="/v/v_registration">Registration</a>
+<form method="post">
+	<input type="text" name="login" placeholder="Введите логин" required>
+	<input type="password" name="password" placeholder="Введите пароль" required>
+	<input type="submit" name="button" value="Войти">
+</form>
