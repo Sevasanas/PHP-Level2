@@ -1,0 +1,15 @@
+{
+    "name": "vendor_name/prototype",
+    "description": "description",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Alexey_Bogdanov",
+            "email": "email@example.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "2.14.3"
+    }
+}

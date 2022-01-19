@@ -1,0 +1,54 @@
+{% extends "base.twig" %}
+
+{% block header %}
+    a class="logo">
+		<img src="img/icon/logo.svg" alt="Logo" />
+	</a>
+	<label class="address">
+		<input type="text" class="input input-address" placeholder="Адрес доставки" />
+	</label>
+	<div class="buttons">
+		<span class="user-name"></span>
+		<button class="button button-primary button-auth">
+            <span class="button-auth-svg"></span>
+            <a class="button-text" href="index.php?class=user&method=login">Войти</a>
+	    </button>
+        <button class="button button-primary button-auth">
+            <span class="button-auth-svg"></span>
+            <a class="button-text" href="index.php?class=user&method=getUser">Личный кабинет</a>
+	    </button>
+		<button class="button button-cart" id="cart-button">
+			<span class="button-cart-svg"></span>
+			<a class="button-text" href="index.php?class=product&method=viewBasket">Корзина</a>
+		</button>
+		<button class="button button-primary button-out">
+			<a class="button-text" href="index.php?class=user&method=logout">Выйти</a>
+			<span class="button-out-svg"></span>
+		</button>
+    </div>
+{% endblock %}
+{% block main %}
+    <section class="container-promo">
+		<section class="promo pizza">
+			<h1 class="promo-title">Онлайн-сервис <br />доставки еды на дом</h1>
+			<p class="promo-text">
+				Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
+			</p>
+	</section>
+{% endblock %}
+{% block footer %}
+    <div class="footer-block">
+		<img src="img/icon/logo.svg" alt="logo" class="logo footer-logo" />
+		<nav class="footer-nav">
+			<a href="#" class="footer-link">Ресторанам </a>
+			<a href="#" class="footer-link">Курьерам</a>
+			<a href="#" class="footer-link">Пресс-центр</a>
+			<a href="#" class="footer-link">Контакты</a>
+		</nav>
+		<div class="social-links">
+			<a href="#" class="social-link"><img src="img/social/instagram.svg" alt="instagram" /></a>
+			<a href="#" class="social-link"><img src="img/social/fb.svg" alt="facebook" /></a>
+			<a href="#" class="social-link"><img src="img/social/vk.svg" alt="vk" /></a>
+		</div>
+    </div>
+{% endblock %}
