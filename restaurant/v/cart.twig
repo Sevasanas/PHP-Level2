@@ -1,0 +1,24 @@
+<div class="modal modal-cart is-open">
+	<div class="modal-dialog">
+		<div class="modal-header">
+			<h3 class="modal-title">Корзина</h3>
+			<button class="close">&times;</button>
+		</div>
+        {% if goods %}  
+	<div class="modal-body">
+		<div class="food-row">
+			<span class="food-name">Наименование</span>
+			<strong class="food-price">Цена</strong>
+			<div class="food-counter">
+				<span class="counter">Количество</span>
+			</div>
+		</div>
+        <div class="modal-footer">
+		    <span class="modal-pricetag">Сумма</span>
+		    <div class="footer-buttons">
+				<button class="button button-primary">Оформить заказ</button>
+				<button class="button clear-cart">Отмена</button>
+			</div>
+		</div>
+	</div>
+</div>

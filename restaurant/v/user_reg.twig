@@ -1,0 +1,33 @@
+{% extends "main.twig" %}
+{% block header %}
+    {{ parent() }}
+{% endblock %}
+{% block main %}
+    <div class="modal-auth">
+		<div class="modal-dialog modal-dialog-auth">
+			<button class="close-auth">&times;</button>
+            {% if userid == NULL %}
+                <legend class="modal-title">Для оформления заказа авторизуйтесь</legend>
+            {% endif %}
+			<form id="logInForm">
+				<fieldset class="modal-body">
+                    <legend class="modal-title">Регистрация</legend>
+					<label class="label-auth">
+						<span>Логин</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-auth">
+						<span>Пароль</span>
+						<input id="password" type="password">
+					</label>
+				</fieldset>
+				<div class="modal-footer">
+					<div class="footer-buttons">
+						<a class="button button-primary button-login">Войти</a>
+						<p>Вы уже зарегистрированы? Пройдите авторизацию</p>
+            			<a href="index.php?class=user&method=login">Авторизация</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
