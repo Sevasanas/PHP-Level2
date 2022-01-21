@@ -1,0 +1,125 @@
+
+.subscribe{
+    max-width: 1200px;
+    padding: 110px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/subscribe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &_title{
+        margin-bottom: 22px;
+        font-size: 36px;
+        color: #fff;
+        line-height: 1;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    &_text{
+        margin-bottom: 27px;
+        line-height: 24px;
+        color: #b9b9b9;
+    }
+    &_form{
+        width: 70%;
+        margin-top: 12px;
+        margin-bottom: 0;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;        
+        &_email{
+            width: 100%;
+            height: 55px;
+            display: inline-block;
+            background: #fff;
+            padding: 10px;          
+            line-height: 30px;
+            color: #a4a4a4;
+            font-weight: 400;
+            border: 0;
+            outline: none;
+            border-radius: 3px; 
+            &:active{
+                border: none;
+                outline: none;
+            }  
+            &:focus{
+                border: none;
+                outline: none;
+            }            
+        }
+        &_btn{
+            padding: 0 30px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-transform: uppercase;
+            line-height: 55px;
+            font-size: 13px;
+            color: #fff;
+            font-weight: 700;
+            text-align: center;           
+            background: #e31e24;          
+            border-radius: 0;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;   
+            cursor: pointer;  
+            &:hover{
+                background-color: #43d651;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+
+@media (min-width: 751px) and (max-width: 900px){
+    .subscribe{
+        padding: 70px 15px;
+        &_title{
+            font-size: 30px;
+        }
+    }
+}
+@media (min-width: 0px) and (max-width: 750px){
+    .subscribe{
+        padding: 50px 15px;
+        &_title{
+            font-size: 20px;
+        }
+        &_text{
+            margin-bottom: 20px;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+        }
+        &_form{
+            width: 100%;
+            &_email{
+                height: 40px;
+            }
+            &_btn{
+                padding: 0 15px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+@media (min-width: 0px) and (max-width: 450px){
+    .subscribe{
+        &_title{
+            font-size: 15px;
+        }
+        &_form{
+            &_email{
+                height: 30px;
+                font-size: 10px;
+            }
+            &_btn{
+                font-size: 10px;
+                line-height: 30px;
+            }
+        }
+    }
+}

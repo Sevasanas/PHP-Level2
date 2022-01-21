@@ -1,0 +1,38 @@
+.brands{
+    padding: 30px 0;
+    &_title{
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        margin: 30px;
+    }
+    &_wrp{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }   
+    &_item{
+        max-width: 100px;
+        &:nth-last-child(n+2){
+            margin-right: 30px;
+        }
+    } 
+    &_link{
+        width: 100%;
+        opacity: 50%;
+        transition: all 0.5s;
+        &:hover{
+            opacity: 1;
+            transition: all 0.5s;
+        }
+    }
+    &_img{
+        width: 100%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 900px){
+    .brands{
+       display: none;
+    }
+}

@@ -1,0 +1,115 @@
+
+.contacts{
+    &_container{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_info{
+        padding: 25px 10px 25px 0;
+    }
+    &_text{
+        &_block{
+            &:nth-last-child(n+2){
+                margin-bottom: 25px;
+            }
+            &_title{
+                font-weight: 300;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: #7a7a7a;
+                margin-bottom: 15px;
+            }
+            &_item{
+                font-weight: 300;
+                color: #7a7a7a;
+                & a{
+                    font-weight: 300;
+                    color: #7a7a7a;
+                }
+            }
+        }
+    }
+}
+
+.write{
+    width: 500px;
+    padding: 25px 0 25px 10px;
+    &_form{
+        display: flex;
+        flex-direction: column;
+        & label{
+            margin-bottom: 5px;
+            font-weight: 300;
+            color: #7a7a7a;
+        }
+        & input{
+            width: 100%;
+            padding: 10px 15px;
+            margin-bottom: 30px;
+            color: #231815;
+            border: 1px solid #c0c0c0;
+            outline: none;
+            display: block;
+            &:focus{
+                border: 1px solid black;
+            }
+        }
+        & textarea{
+            width: 100%;
+            height: 200px;
+            padding: 10px 15px;
+            margin-bottom: 30px;
+            color: #231815;
+            border: 1px solid #c0c0c0;
+            outline: none;
+            display: block;
+            resize: vertical;
+            &:focus{
+                border: 1px solid black;
+            }
+        }
+        & input[type=submit]{
+            display: block;
+            width: 250px;
+            padding: 20px 0;
+            margin: 0 auto;
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
+            background: #e31e24;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            &:hover{
+                color: #fff;
+                text-decoration: none;
+                background: #43d651;
+                transition: all 0.3s;
+            }
+        }
+    }   
+}
+
+.map{
+    height: 400px;
+}
+
+@media (min-width: 0px) and (max-width: 900px){
+   .contacts{
+       &_container{
+           flex-wrap: wrap;
+       }
+   }
+   .write{
+       width: 100%;
+       padding: 25px 0;
+   }
+}
+@media (min-width: 0px) and (max-width: 750px){
+    .map{
+        height: 250px;
+    }
+ }

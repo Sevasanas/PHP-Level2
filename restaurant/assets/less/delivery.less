@@ -1,0 +1,31 @@
+
+.delivery{
+    &_text{
+        &_block{
+            margin: 20px 0;
+            &_title{
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            &_list{
+                list-style-type: none;
+            }
+            &_item{
+                margin-bottom: 5px;
+                &::before{
+                    content: "•";
+                    font-size: 17px;
+                    vertical-align: top;
+                    padding-right: 8px;
+                }
+            }
+            &_img{
+                margin: 15px 0;
+            }
+            & p{
+                margin-bottom: 10px; 
+            }
+        }
+    }
+}

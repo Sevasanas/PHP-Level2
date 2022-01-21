@@ -1,0 +1,80 @@
+
+@import "variables.less";
+
+*, body,
+a, p, h1,
+h2, h3, span,
+ul, li{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #231815;
+}
+body{
+    min-height: 100vh;
+}
+html,
+body {
+	height: 100%;
+}
+a {
+    text-decoration: none;  
+}
+.wrp{
+    position: relative;
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content{
+    flex: 1 0 auto;
+}
+.content_wrp{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 15px;
+}
+.page_title{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+@import "header.less";
+@import "nav.less";
+@import "main.less";
+@import "modal.less";
+@import "banner.less";
+@import "brands.less";
+@import "popularGoods.less";
+@import "newArrival.less";
+@import "subscribe.less";
+@import "userLogin.less";
+@import "userReg.less";
+@import "catalog.less";
+@import "good.less";
+@import "delivery.less";
+@import "payment.less";
+@import "refund.less";
+@import "warranty.less";
+@import "contacts.less";
+@import "recommend.less";
+@import "feedbacks.less";
+@import "cart.less";
+@import "userAccount.less";
+@import "raiting.less";
+@import "footer.less";
+
+@media (min-width: 0px) and (max-width: 900px){
+    .content_wrp{
+        max-width: 750px;
+        padding: 15px;
+    }
+    .page_title{
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
